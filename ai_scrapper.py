@@ -22,10 +22,6 @@ if openai_access_token:
             "model": model,
             "base_url": "https://api.deepseek.com",
         },
-        "loader_kwargs": {
-            "headless": True,
-            "args": ["--no-sandbox", "--disable-dev-shm-usage"],
-        },
     }
     # Get the URL of the website to scrape
     url = st.text_input("Enter the URL of the website you want to scrape")
