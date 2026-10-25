@@ -18,7 +18,7 @@ st.title("网页扒皮神器🕵️‍♂️")
 st.caption("输入网址，让 AI 帮你提取你需要的信息")
 
 # Get OpenAI API key from user
-openai_access_token = st.text_input("DeepSeek API Key", type="password")
+openai_access_token = st.secrets.get("DEEPSEEK_API_KEY", "")
 
 if openai_access_token:
     model = st.radio(
