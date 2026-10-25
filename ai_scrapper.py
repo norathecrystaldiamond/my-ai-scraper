@@ -45,7 +45,7 @@ if openai_access_token:
         config=graph_config
     )
     # Scrape the website
-if st.button("Scrape"):
+    if st.button("Scrape"):
     result = smart_scraper_graph.run()
     
    
