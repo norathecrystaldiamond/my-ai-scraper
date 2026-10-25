@@ -1,3 +1,4 @@
 streamlit 
 scrapegraphai
 playwright==1.49.0
+greenlet==2.0.2
