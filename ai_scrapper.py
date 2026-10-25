@@ -20,7 +20,11 @@ if openai_access_token:
         "llm": {
             "api_key": openai_access_token,
             "model": model,
-            "base_url": "https://api.deepseek.com",  # 关键：告诉程序去 DeepSeek 的服务器
+            "base_url": "https://api.deepseek.com",
+        },
+        "loader_kwargs": {
+            "headless": True,
+            "args": ["--no-sandbox", "--disable-dev-shm-usage"],
         },
     }
     # Get the URL of the website to scrape
